@@ -15,17 +15,10 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
-		//<nav>
-    		//<ul>
-        	//	<li><a href="/">Home</a></li>
-	        //	<li><a href="/about">About</a></li>
-        	//	<li><a href="/cv">CV</a></li>
-        		//<li><a href="/blog">Blog</a></li>
-    		//</ul>
-	//	</nav>
 		<div class="container">
     		<div class="blurb">
         		<h1>Hi there, I'm Manoj Kumar!</h1>
+			<p>Date/Time: <span id="datetime"></span></p>
 				<p>I'm best known as the quirky designer from <em>NIFT</em> Do check my portfolio.
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
@@ -41,5 +34,11 @@
         		<li><a href="https://github.com/iamanojkumar">github.com/iamanojkumar</a></li>
 			</ul>
 		</footer>
+		
+		<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+		
 	</body>
 </html>
